@@ -2,12 +2,11 @@
 
 [![NinjaTrader 8](https://img.shields.io/badge/Platform-NinjaTrader%208-black.svg)](https://ninjatrader.com)
 [![License: Personal Use](https://img.shields.io/badge/License-Personal%20Use-6E6E6E.svg)](#license)
+[![Support: Buy Me a Coffee](https://img.shields.io/badge/Support-Buy%20Me%20a%20Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/icpriceaction)
 [![YouTube Guide](https://img.shields.io/badge/YouTube-Watch%20Walkthrough-red.svg)](https://youtube.com/@icPriceAction)
 [![Website](https://img.shields.io/badge/Website-icpriceaction.com-111213.svg)](https://icpriceaction.com)
-[![Buy Me a Coffee](https://img.shields.io/badge/Support-Buy%20Me%20a%20Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/icpriceaction)
-[![Prop Discounts](https://img.shields.io/badge/Prop%20Discounts-Code%20ICPAT-black.svg)](https://icpriceaction.com/prop-firms.html)
 
-A specialized Indicator engineered for Price Action day trading. It plots a session, weekly, monthly or custom-start VWAP with up to three time-zone aware anchor resets, five standard deviation bands and the previous segment's VWAP carried forward as a reference level.
+A specialized Indicator engineered for Price Action and Order Flow trading. It plots a session, weekly, monthly or custom-start VWAP with up to three time-zone aware anchor resets, five standard deviation bands and the previous segment's VWAP carried forward as a reference level.
 
 ---
 
@@ -21,13 +20,31 @@ Watch the complete breakdown of parameters, price action context, and chart exam
 
 ---
 
+## ☕ Support the Project
+
+All tools by **icPriceAction** are **100% free and open-source for personal trading use**. There are no paywalls, subscriptions, or locked features and there never will be!
+
+Developing, optimizing for zero latency on multiple charts/instruments, and maintaining documentation and releases takes a **considerable amount of personal time and ongoing effort**. 
+
+If this tool saves you screen time, improves your execution, or cleans up your charts, buying a coffee is the best way to support continued development:
+
+<p align="left">
+  <a href="https://buymeacoffee.com/icpriceaction" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="190">
+  </a>
+</p>
+
+> **[☕ Support Development on Buy Me a Coffee](https://buymeacoffee.com/icpriceaction)**
+
+---
+
 ## ⚡ Key Features
 
 - **Flexible VWAP periods and anchors:** Session, Week, Month or Custom Start periods. In Session mode, up to three anchors restart the VWAP at set times (default 09:30 New York), each in its own time zone (New York, Chicago, London, Frankfurt, Tokyo, Sydney, Exchange or Platform), so they follow daylight saving changes automatically. Turn off the session reset for an RTH-only VWAP.
 - **Five standard deviation bands plus previous segment levels:** Layered band fills that break cleanly at every reset, with the previous segment's final VWAP (and optionally its bands) carried forward as dashed reference lines.
 - **Z-Score output and tick precision:** A Z-Score value ((close − VWAP) / standard deviation) is available in the Data Box, Market Analyzer and strategies. An optional 1-tick calculation mode gives exact trade prices, tick-precise anchors and a true VWAP on Heiken Ashi charts.
-- **PATS & Context Aligned:** Designed for Price Action principles (Mack / Thomas Wade) and disciplined futures execution.
-- **Zero Chart Lag:** Native C# execution optimized to prevent UI freezes on high-frequency 2000-tick ES/MES charts.
+- **PATS & Context Aligned:** Designed for Price Action principles and disciplined futures execution.
+- **Zero Chart Lag:** Native C# execution optimized to prevent UI freezes on high-frequency tick charts.
 - **Clean Visuals:** Complementary default palette that preserves candlestick clarity without chart clutter.
 - **Fully Customizable:** Configure colors, thresholds, offsets, and alerts via the native NT8 settings panel.
 
@@ -47,7 +64,7 @@ Watch the complete breakdown of parameters, price action context, and chart exam
 ## 📥 Installation Guide
 
 1. Head to the **[Releases](https://github.com/icPriceAction/vwap/releases)** tab of this repository.
-2. Download the latest release `.zip` file (`icPriceAction_icPAVWAP_v1.5.3.zip`).
+2. Download the latest release `.zip` file.
    - *Note: Do NOT extract or unzip the file.*
 3. Open **NinjaTrader 8**.
 4. In the Control Center, navigate to:
@@ -106,7 +123,7 @@ Watch the complete breakdown of parameters, price action context, and chart exam
 
 ## 📝 Changelog
 
-- **v1.5.3** (2026-11-02) - Initial public release. Cleaned and optimized by icPriceAction.
+- **v1.5.3**              - Initial public release. Cleaned and optimized by icPriceAction.
 - **v1.5.2**              - Fixed Week/Month resets on daily charts; clearer anchor checks; code comments reviewed.
 - **v1.5.1**              - Auto Scale defaults to off; the Z-Score plot stays excluded from autoscaling.
 - **v1.5.0**              - Added VWAP Period (Session/Week/Month/Custom Start), Reset At Session Start, Custom Start, previous segment VWAP and bands, Z-Score plot, strategy parameters.
@@ -123,15 +140,6 @@ Watch the complete breakdown of parameters, price action context, and chart exam
 - **v1.0.2**              - Deviation bands now converge on the first bar.
 - **v1.0.1**              - Anchor time is now applied correctly.
 - **v1.0.0**              - Initial anchored VWAP implementation.
-
----
-
-## ☕ Support the Project
-
-All tools provided by **icPriceAction** are 100% free and open-source for personal trading use. These tools, even thou supported by AI have taken considerable time to design, build, test and package. If these tools bring you value, consider supporting continued development:
-
-- **Prop Firm Traders:** Use discount code **`ICPAT`** at checkout across top futures prop evaluation firms ([View Active Discounts](https://icpriceaction.com/prop-firms.html)).
-- **Profitable Traders:** Send a one-time tip to support my continued support and time, server hosting and open-source updates via [Buy Me a Coffee](https://buymeacoffee.com/icpriceaction).
 
 ---
 

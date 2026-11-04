@@ -10,7 +10,6 @@
 // Repository:   https://github.com/icPriceAction/vwap
 // YouTube:      https://youtube.com/@icPriceAction
 // Support:      https://buymeacoffee.com/icpriceaction
-// Prop Code:    ICPAT (Discounts: https://icpriceaction.com/prop-firms.html)
 //
 // License:      Free for personal trading use. Commercial resale, redistribution,
 //               or repackaging is strictly prohibited. See LICENSE in official repository.
@@ -20,7 +19,7 @@
 //               Z-Score output.
 //
 // Changelog:
-//   v1.5.3 (2026-11-02) - Initial public release. Cleaned and optimized by icPriceAction.
+//   v1.5.3              - Initial public release. Cleaned and optimized by icPriceAction.
 //   v1.5.2              - Fixed Week/Month resets on daily charts; clearer anchor checks; code comments reviewed.
 //   v1.5.1              - Auto Scale defaults to off; the Z-Score plot stays excluded from autoscaling.
 //   v1.5.0              - Added VWAP Period (Session/Week/Month/Custom Start), Reset At Session Start,
@@ -188,7 +187,7 @@ namespace NinjaTrader.NinjaScript.Indicators.icPA
 			{
 				Description							= "Volume Weighted Average Price with Session, Week, Month or Custom Start periods, up to three time-zone aware anchor resets, five standard deviation bands, previous segment levels and a Z-Score output. Works on any bar type;\r\n"
 													+ "Developed by Istvan Cebrian | https://icpriceaction.com\n"
-													+ "Support this free tool: https://buymeacoffee.com/icpriceaction | Prop Firm Discount Code: ICPAT (https://icpriceaction.com/prop-firms.html)";
+													+ "Support this free tool: https://buymeacoffee.com/icpriceaction";
 				Name								= "icPA - VWAP";
 				Calculate							= Calculate.OnBarClose;
 				IsOverlay							= true;
